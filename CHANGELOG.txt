@@ -1,3 +1,14 @@
+0.2.11 (2009-07-15)
+* Add new MapQuest geocoder [Aubrey Holland]
+
+0.2.10 (2009-04-17)
+* Added #blank? to Location
+
+0.2.9 (2009-04-14)
+* Remove retired MapQuest geocoder
+* Slightly more aggressive error handling for Geocoder.us
+* Extend Numeric with #to_radians and #to_degrees
+
 0.2.8 (2008-10-03)
 * fixed missing files from gem
 

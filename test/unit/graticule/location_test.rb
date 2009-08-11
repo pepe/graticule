@@ -69,5 +69,11 @@ module Graticule
         
     end
 
+    def test_blank?
+      assert Location.new.blank?
+      [:latitude, :longitude, :street, :locality, :region, :postal_code, :country].each do |attr|
+        assert !Location.new(attr => 'Foo').blank?
+      end
+    end
   end
 end

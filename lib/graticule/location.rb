@@ -23,6 +23,10 @@ module Graticule
       end
     end
     
+    def blank?
+      attributes.except(:precision).empty?
+    end
+    
     # Returns an Array with latitude and longitude.
     def coordinates
       [latitude, longitude]
@@ -75,5 +79,4 @@ module Graticule
     end
     
   end
-
 end
